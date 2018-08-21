@@ -7,7 +7,7 @@
 
 glitchlock: a glitch art themed randomized lockscreen. powered by i3lock-color.
 
-![glitchlock preview](https://raw.githubusercontent.com/xero/glitchlock/master/preview.gif)
+![glitchlock preview](https://raw.githubusercontent.com/xero/glitchlock/master/preview.png)
 
 (note, the lock screen is **NOT** animated. this gif is just a few examples of it's random output)
 

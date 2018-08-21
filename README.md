@@ -21,15 +21,15 @@ glitchlock: a glitch art themed randomized lockscreen. powered by i3lock-color.
 
 ### about
 
-i do [glitch art](https://x-ero.tumblr.com) for fun. i was messing around w/ one of my shell scripts and though: this would make a cool lockscreen! after a bit of research and refactoring here we are.
+i do [glitch art](https://x-ero.tumblr.com) for fun. i was messing around w/ one of my shell scripts and thought: this would make a cool lockscreen! after a bit of research and refactoring here we are.
 
 ### how it works
 
-the application takes a screenshot. then datamoshes it. optionally overlays an image (one for each display) then uses that image as the background for the lockscreen.
+the script takes a screenshot, then datamoshes it. optionally overlays an image (one for each display) then uses that image as the background for the lockscreen.
 
 ### security
 
-this lockscreen has the potential for information leakage, since it uses a screenshot of your active screen. it made this for fun and personal use, please take care and weigh your opsec and threat models before deciding to use this. 
+this lockscreen has the potential for information leakage, since it uses a screenshot of your active screen. i made this for fun and personal use, please take care and weigh your opsec and personal threat model before deciding to use this. 
 
 a workaround i like is setting up your screen very nicely w/o any secret info in it and taking a screenshot. then replace line #9 in the script (`scrot /tmp/lock.png`) with a command to move your pre-setup screenshot into place (e.g. `mv ~/lib/img/lock.png /tmp/lock.png`) then let the script randomly glitch that image out everytime.
 

@@ -20,7 +20,6 @@ glitchlock: a glitch art themed randomized lockscreen. powered by i3lock-color.
 * [more](#more)
 * [license](#license)
 
-
 ### about
 
 i do [glitch art](https://x-ero.tumblr.com) for fun. i was messing around w/ one of my shell scripts and thought: this would make a cool lockscreen! after a bit of research and refactoring here we are.
@@ -31,7 +30,7 @@ the script takes a screenshot, then datamoshes it. optionally overlays an image 
 
 ### security
 
-this lockscreen has the potential for information leakage, since it uses a screenshot of your active screen. i made this for fun and personal use, please take care and weigh your opsec and personal threat model before deciding to use this. 
+this lockscreen has the potential for information leakage, since it uses a screenshot of your active screen. i made this for fun and personal use, please take care and weigh your opsec and personal threat model before deciding to use this.
 
 a workaround i like is setting up your screen very nicely w/o any secret info in it and taking a screenshot. then replace line #9 in the script (`scrot /tmp/lock.png`) with a command to move your pre-setup screenshot into place (e.g. `cp ~/lib/img/lock.png /tmp/lock.png`) then let the script randomly glitch that image out everytime.
 
@@ -47,9 +46,11 @@ a workaround i like is setting up your screen very nicely w/o any secret info in
 	* image manipulation toolkit
 	* https://github.com/ImageMagick/ImageMagick
 
-if you're using arch they can all be installed from the community and aur repos:
+if you're using arch they can all be installed from the extra, community, and aur repos:
 
-`yaourt -S i3lock-color-git scrot imagemagick`
+`yay -S i3lock-color-git scrot imagemagick`
+
+* [yay](https://github.com/Jguer/yay) is aur helper that wraps pacman.
 
 ### customize
 
@@ -60,7 +61,7 @@ an example of calling the script on `MOD4+ESC` using [sxhkd](https://github.com/
 ```
 # lockscreen
 mod4 + Escape
- GLITCHICON=/home/x0/src/glitchlock/stop.png /home/x0/bin/glitchlock
+ GLITCHICON=~/src/glitchlock/stop.png ~/bin/glitchlock
 ```
 
 ### more

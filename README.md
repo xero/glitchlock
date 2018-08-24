@@ -9,7 +9,7 @@ glitchlock: a glitch art themed randomized lockscreen. powered by i3lock-color.
 
 ![glitchlock preview](https://raw.githubusercontent.com/xero/glitchlock/master/preview.png)
 
-(note, the lock screen is **NOT** animated. this gif is just a few examples of it's random output)
+(note, the lock screen is **NOT** animated. this gif is meant to showcase it's random output)
 
 ## table of contents
 * [about](#about)
@@ -32,7 +32,7 @@ the script takes a screenshot, then datamoshes it. optionally overlays an image 
 
 this lockscreen has the potential for information leakage, since it uses a screenshot of your active screen. i made this for fun and personal use, please take care and weigh your opsec and personal threat model before deciding to use this.
 
-a workaround i like is setting up your screen very nicely w/o any secret info in it and taking a screenshot. then replace line #9 in the script (`scrot /tmp/lock.png`) with a command to move your pre-setup screenshot into place (e.g. `cp ~/lib/img/lock.png /tmp/lock.png`) then let the script randomly glitch that image out everytime.
+an example workaround would be setting up your screen very nicely w/o any secret info in it and taking a screenshot. then replace [line #9](https://github.com/xero/glitchlock/blob/master/glitchlock#L9) in the script (`scrot /tmp/lock.png`) with a command to {move,copy} your pre-setup screenshot into place (e.g. `cp ~/lib/img/lock.png /tmp/lock.png`) then let the script randomly glitch that image out everytime.
 
 ### requirements
 
@@ -46,11 +46,11 @@ a workaround i like is setting up your screen very nicely w/o any secret info in
 	* image manipulation toolkit
 	* https://github.com/ImageMagick/ImageMagick
 
-if you're using arch they can all be installed from the extra, community, and aur repos:
+if you're using [arch](https://www.archlinux.org) they can all be installed from the extra, community, and aur repos:
 
 `yay -S i3lock-color-git scrot imagemagick`
 
-* [yay](https://github.com/Jguer/yay) is aur helper that wraps pacman.
+\* [yay](https://github.com/Jguer/yay) is an aur helper that wraps [pacman](https://www.archlinux.org/pacman/).
 
 ### customize
 

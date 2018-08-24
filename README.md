@@ -33,7 +33,7 @@ the script takes a screenshot, then datamoshes it. optionally overlays an image 
 
 this lockscreen has the potential for information leakage, since it uses a screenshot of your active screen. i made this for fun and personal use, please take care and weigh your opsec and personal threat model before deciding to use this. 
 
-a workaround i like is setting up your screen very nicely w/o any secret info in it and taking a screenshot. then replace line #9 in the script (`scrot /tmp/lock.png`) with a command to move your pre-setup screenshot into place (e.g. `mv ~/lib/img/lock.png /tmp/lock.png`) then let the script randomly glitch that image out everytime.
+a workaround i like is setting up your screen very nicely w/o any secret info in it and taking a screenshot. then replace line #9 in the script (`scrot /tmp/lock.png`) with a command to move your pre-setup screenshot into place (e.g. `cp ~/lib/img/lock.png /tmp/lock.png`) then let the script randomly glitch that image out everytime.
 
 ### requirements
 

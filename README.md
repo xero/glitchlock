@@ -52,6 +52,10 @@ if you're using [arch](https://www.archlinux.org) they can all be installed from
 
 \* [yay](https://github.com/Jguer/yay) is an aur helper that wraps [pacman](https://www.archlinux.org/pacman/).
 
+if you're using [VoidLinux](https://voidlinux.org/) you will need [xrandr](https://github.com/raboof/xrandr):
+
+`sudo xbps-install -S xrandr`
+
 ### customize
 
 if called alone, the script will take a screenshot and glitch it. but you can optionally pass an environment variable named  `GLITCHICON` to the app and it will center that image on each display and overlay it on the glitched image.

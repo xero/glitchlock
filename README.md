@@ -22,11 +22,11 @@ glitchlock: a glitch art themed randomized lockscreen. powered by i3lock-color.
 
 ### about
 
-i do [glitch art](https://x-ero.tumblr.com) for fun. i was messing around w/ one of my shell scripts and thought: this would make a cool lockscreen! after a bit of research and refactoring here we are.
+i do [glitch art](https://lab.x-e.ro/glitches) for fun. i was messing around w/ one of my shell scripts and thought: this would make a cool lockscreen! after a bit of research and refactoring here we are.
 
 ### how it works
 
-the script takes a screenshot, then datamoshes it. optionally overlays an image (one for each display) then uses that image as the background for the lockscreen.
+the script takes a screenshot, corrupts it, then optionally overlays an image (one for each display) then uses that image as the background for the lockscreen.
 
 ### security
 

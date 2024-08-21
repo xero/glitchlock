@@ -67,7 +67,7 @@ mod4 + Escape
 ### more
 
 * https://0w.nz
-* https://xero.nu
+* https://x-e.ro
 * https://nixers.net
 * https://git.io/.files
 * https://reddit.com/r/unixporn

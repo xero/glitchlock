@@ -7,7 +7,7 @@
 # requires: i3lock-color, imagemagick, scrot
 
 scrot /tmp/lock.png
-convert /tmp/lock.png /tmp/lock.jpg
+magick /tmp/lock.png /tmp/lock.jpg
 file=/tmp/lock.jpg
 
 function datamosh() {
@@ -46,10 +46,10 @@ do
 	fi
 done <<<"$(xrandr)"
 
-convert /tmp/lock.jpg /tmp/lock.png >/dev/null 2>&1
+magick /tmp/lock.jpg /tmp/lock.png >/dev/null 2>&1
 rm /tmp/lock.jpg
 file=/tmp/lock.png
 
-convert "$file" "${LOCK[@]}" "$file"
+magick "$file" "${LOCK[@]}" "$file"
 
 i3lock -n "${PARAM[@]}" -i "$file" > /dev/null 2>&1
